@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Formulaire de demande</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="demande.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script type="text/javascript" src='js.js'></script>
+</head>
+
+<body>
+
+    <header>
+        <div id="entete">
+
+            <div class="logo">
+                <img src="img/final.png" alt="logo">
+            </div>
+
+
+            <div id="menu">
+
+                <div id="part1">
+                    <div id="vide"></div>
+
+                    <div id="haut">
+                        <div id="search">
+                            <input type="text" placeholder="Recherche..">
+                        </div>
+                        <button onclick="location.href='inscription.html'" id="signIn"> Inscription </button>
+                        <button onclick="location.href='connexion.html'" id="login"> Connexion </button>
+                    </div>
+                </div>
+
+                <div id="vide2"></div>
+
+                <div id="part2">
+                    <div id="bas">
+                        <a class="active" href="index.html">Accueil</a>
+                        <a href="#about">A propos</a>
+                        <a href="#foot">Contact</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div id="formulaire">
+        <div class="introduction">veuillez remplir ce formulaire pour rendre compte de vos coordonnes a ce jobeur et lui permettre de vous contacter </div>
+
+        <form name="formulaire" action="mailto:votreemail@***.***" method="post" onSubmit="return verif_formulaire()">
+
+            <div class="field">
+
+                <div class="line">
+                    <label for="nom">Nom : </label>
+                    <input type="text" size="40" name="nom" id="nom" placeholder="votre nom"> <br>
+                </div>
+
+                <div class="line">
+                    <label for="pnom">Prenom:</label>
+                    <input type="text" size="40" id="pnom" placeholder="votre prenom"> <br>
+                </div>
+
+                <div class="line">
+                    <label for="mail">Courriel :</label>
+                    <input type="email" size="40" name="mail" id="mail" placeholder="email@email.com"> <br>
+                </div>
+
+                <div class="line">
+                    <label for="ntel">N°tel :</label>
+                    <input type="tel" size="40" name="Ntel" id="ntel" placeholder="exemple 00 662 49 45 22"> <br>
+                </div>
+
+                <div class="line">
+                    <label for="ville">Ville :  </label>
+                    <input type="text " size="40 " name="ville " id="ville " placeholder="votre ville"> <br>
+                </div>
+
+                <div class="line">
+                    <label for="add ">Adresse :</label>
+                    <input type="text " size="40 " name="adresse " id="add " placeholder="adresse domicile"> <br>
+                </div>
+
+                <div class="descr">
+                    <label for="txt " class="descr ">Description du travail a faire: </label>
+                    <textarea type="text " rows="6 " cols="80 " id="txt ">  </textarea> <br>
+                </div>
+
+                <button type="submit " class="boutton "> Envoyer </button>
+
+                <a href="index.html ">
+                    <div class="annuler ">Annuler</div>
+                </a>
+
+
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+
+<footer class="footer">
+
+    <div id="foot">
+        <div id="barrejaune"></div>
+
+        <div id="social">
+            <ul class="contact">
+                <li><img src="img/person.png" alt="person"> Tizi-Ouzou Algerie </li>
+                <li><img src="img/phone.png" alt="phone"> Phone: +00 151515</li>
+                <li><img src="img/mail.png" alt="mail"> Email: mail@mail.com </li>
+            </ul>
+            <p>Retrouvez nous sur les réseaux sociaux</p>
+            <ul class="list-social">
+                <li class="icon-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                </li>
+                <li class="icon-social">
+                    <a href="#" class="fa fa-linkedin"></a>
+                </li>
+                <li class="icon-social">
+                    <a href="#" class="fa fa-twitter"></a>
+                </li>
+                <li class="icon-social">
+                    <a href="#" class="fa fa-google"></a>
+                </li>
+                <li class="icon-social">
+                    <a href="#" class="fa fa-youtube"></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+</footer>
+
+</html>

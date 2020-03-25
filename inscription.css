@@ -1,0 +1,302 @@
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif, Helvetica;
+}
+
+
+/* -------------------------------HEADER----------------------------------------- */
+
+#entete {
+    background-color: #008080;
+    height: max-content;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+    right: 0;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+    margin: 1ex;
+    margin-left: 2ex;
+    margin-top: 2ex;
+    border-radius: 1ex;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#part1 {
+    display: flex;
+    flex-direction: row;
+}
+
+#vide:nth-child(1) {
+    flex: 1;
+}
+
+#haut {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: max-content;
+    margin-top: 1ex;
+    margin-right: 1ex;
+}
+
+#vide2:nth-child(2) {
+    flex: 1;
+}
+
+#part2 {
+    background-color: #ede576;
+    margin-left: 29%;
+    right: 0;
+}
+
+#search input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    font-size: 17px;
+    border-radius: 0.4ex;
+}
+
+#signIn,
+#login {
+    background-color: white;
+    border: none;
+    color: teal;
+    padding: 6px 20px;
+    margin-left: 1ex;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 0.4ex;
+}
+
+#signIn:hover,
+#login:hover {
+    opacity: 0.95;
+}
+
+#bas a {
+    float: left;
+    display: block;
+    color: teal;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#bas a:hover {
+    /* background-color: #e5d80e; */
+    box-shadow: 0.5px 0.5px 0.5px 0.5px #ede576;
+    color: teal;
+}
+
+#bas a.active {
+    background-color: #e5d80e;
+    color: teal;
+}
+
+#vide2:nth-child(2) {
+    flex: 1;
+}
+
+
+/* -------------------------------------BODY------------------------------------------ */
+
+body {
+    margin: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.j {
+    width: 100%;
+    height: 170px;
+    background-color: teal;
+}
+
+.jobe {
+    margin-top: 3ex;
+    background-size: cover;
+    width: 85%;
+    max-width: 600px;
+    background: #f1f1f1;
+    position: relative;
+    left: 30%;
+    top: 20%;
+    padding: 100px 40px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 20px #000000b3;
+}
+
+.jobe h1 {
+    text-align: center;
+    color: black;
+    margin: 10px;
+    padding: 0 0 20px;
+}
+
+.jobe p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.jobe input,
+select {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.jobe input[type=texte],
+.jobe input[type=tel],
+.jobe input[type=email],
+.jobe input[type=password] {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    outline: none;
+    height: 40px;
+    display: 16px;
+    color: black;
+    text-align: center;
+}
+
+::placeholder {
+    color: darkgray;
+}
+
+.jobe select {
+    margin-top: 20px;
+    padding: 10px, 0;
+}
+
+.jobe input[type=submit],
+input[type=reset] {
+    border: none;
+    height: 40px;
+    outline: none;
+    font-size: 15px;
+    background-color: darkgray;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+
+/* --------------------------------FOOTER---------------------------------------------- */
+
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: teal;
+    color: white;
+    text-align: center;
+}
+
+
+/* MEDIA SOCIAL */
+
+.fa {
+    padding: 7px;
+    font-size: 25px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 1ex;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: white;
+    color: #e61d1d;
+}
+
+h5.white-text {
+    text-align: justify;
+    color: white;
+    font-size: 24PX;
+    padding-bottom: 0.8rem;
+}
+
+.contact {
+    list-style: none;
+    padding: 0%;
+}
+
+.contact img {
+    padding-right: 1ex;
+}
+
+.list-social {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: max-content;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.icon-social {
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+}
+
+#social {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.5ex;
+}
+
+#barrejaune {
+    height: 0.1ex;
+    width: 100%;
+    margin-top: 7ex;
+    padding-top: 1ex;
+    background-color: #ede576;
+}
